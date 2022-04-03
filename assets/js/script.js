@@ -1,4 +1,6 @@
-import { quizQuestionsDataBase } from "../js/questionaire.js";
+import {
+    quizQuestionsDataBase
+} from "../js/questionaire.js";
 
 //game instructions help
 
@@ -12,18 +14,18 @@ var btn = document.getElementById("gameInstructions");
 var span = document.getElementById("gameInstructions");
 
 //when clicked open the modal
-btn.onclick = function() {
+btn.onclick = function () {
     modal.style.display = "block";
 };
 
 //when clicked on <span> (x), close the modal
 
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 };
 
 //when clicked outside modal, close the modal
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -46,7 +48,7 @@ function startGame(event) {
     console.log("started");
     startButton.classList.add("hide");
     document.getElementById("question").classList.remove("hide");
-    shuffledQuestions = quizQuestions.sort(() => Math.random() -0.5);
+    shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
     curentQuestionIndexNumber = 0;
     document.getElementById("answer-buttons").classList.remove("hide");
     setNextQuestion();
@@ -67,7 +69,7 @@ function setNextQuestion() {
 
 //keep the track of question number
 function questionTracker(event) {
-    curentQuestionIndexNumber +=1;
+    curentQuestionIndexNumber += 1;
     let nextQuestBtn = document.getElementById("next-btn");
     if (curentQuestionIndexNumber == 10) {
         nextQuestBtn.innerHTML = "Show Results";
@@ -114,7 +116,7 @@ function resetBackgroundColor(event) {
 //event listners to the selected answer on onclicks
 let butons = document.getElementsByClassName("btn");
 for (let i = 0; i < buttons.length; i++) {
-    let button = butons[i].addEventListener("click", resetBackgroundColor); 
+    let button = butons[i].addEventListener("click", resetBackgroundColor);
     button = buttons[i].addEventListener("click", answerHighlighted);
     button = buttons[i].addEventListener("click", answerSelected);
 };
@@ -184,7 +186,7 @@ function returnResults(event) {
     };
     //variable of userScore
     let userScore = document.getElementById("user-score");
-    userScore.innerHTML = correctAnswerScore; 
+    userScore.innerHTML = correctAnswerScore;
     let personalMessage = document.getElementById("personal-message");
     if (corectAnswerScore == 0) {
         personalMessage.innerHTML = "Opps...Looks like you have to learn some geography... Try again!"
