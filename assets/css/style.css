@@ -218,7 +218,7 @@ header button:hover {
 }
 
 /*Media queries*/
-
+/*Screen size for larger to to medium size devices from 780px down*/
 @media screen and (min-height: 780px) {
     .dead-space {
         height: 650px;
@@ -234,13 +234,14 @@ header button:hover {
         font-size: 1.4em;
         font-weight: 900;
         margin: 70px 40px 70px 40px;
-        background-color: rgb(107,179,189,0.7);
+        background-color: rgb(107, 179, 189, 0.7);
         padding: 30px;
         border-radius: 35px;
         border-style: solid;
-        border-color: rgb(71,112,112);
+        border-color: rgb(71, 112, 112);
         border-width: 3px;
     }
+
     #person-message {
         margin-top: 30px;
     }
@@ -259,5 +260,194 @@ header button:hover {
         border-width: 2px;
         border-color: darkblue;
         cursor: pointer;
+    }
+}
+
+/*Screen size for larger to to medium size devices from 580px down*/
+@media screen and (max-width: 580px) {
+    header button {
+        font-size: 1.1em;
+    }
+
+    #question {
+        margin: 20px 5px 20px 2px;
+        font-size: 1.3em;
+    }
+
+    .btn {
+        height: fit-content;
+        letter-spacing: 1.2px;
+        width: 65%;
+        font-size: 1.2em;
+    }
+
+    #start-new-game-btn {
+        top: 30px;
+        padding: 10px 20px;
+        margin-top: 30px;
+        font-size: 1.1em;
+    }
+
+    .next-btn {
+        margin: 30px auto;
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+
+    .submit-btn {
+        margin: 30px auto;
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+
+    .start-game {
+        margin: 200px auto;
+        font-size: 2.0em;
+        font-weight: 700;
+        padding: 10px;
+    }
+
+    .question-counter {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    #result-box {
+        font-size: 1.2em;
+    }
+
+    #person-message {
+        margin-top: 30px;
+    }
+
+    #start-new-game-btn {
+        font-size: 1.2em;
+    }
+}
+
+/*Screen size for larger to to medium size devices from 460px down*/
+@media screen and (max-width: 460px) {
+    header button {
+        font-size: 1.1em;
+    }
+
+    .hidden-instructions {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        font-size: 1.3em;
+    }
+
+    h1 {
+        margin: 10px 5px 5px 5px;
+        font-size: 3em;
+    }
+
+    #question {
+        margin: 20px 5px 20px 5px;
+        font-size: 1.2em;
+    }
+
+    .btn {
+        margin: 3px;
+        padding: 3px;
+        width: 80%;
+        letter-spacing: 1.0em;
+        height: fit-content;
+    }
+
+    #start-new-game-btn {
+        top: 30px;
+        padding: 10px 20px;
+        margin-top: 30px;
+        font-size: 1.1 em;
+    }
+
+    .next-btn {
+        margin: 30px auto;
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+
+    .question-counter {
+        font-size: 1.0em;
+        margin-bottom: 20px;
+    }
+
+    #result-box {
+        font-size: 1.1em;
+    }
+
+    #person-message {
+        margin-top: 30px;
+    }
+
+    #start-new-game-btn {
+        font-size: 1.0em;
+    }
+
+    .dead-space {
+        height: 200px;
+    }
+}
+
+/*Screen size for larger to to medium size devices from 300px down*/
+@media screen and (max-width: 300px) {
+    header button {
+        font-size: 1.1em;
+    }
+
+    h1 {
+        margin: 10px 5px 5px 5px;
+        font-size: 2.6em;
+    }
+
+    #question {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+    }
+
+    #start-new-game-btn {
+        font-size: 1.0em;
+    }
+
+    .next-btn {
+        font-size: 1.0em;
+    }
+
+    .submit-btn {
+        font-size: 1.0em;
+    }
+
+    .start-game {
+        margin: 200px auto;
+        padding: 10px 10px;
+        font-size: 1.6em;
+        font-weight: 700;
+        width: 85%;
+    }
+
+    .question-counter {
+        font-size: 1.0em;
+        margin-bottom: 20px;
+    }
+
+    #result-box {
+        font-size: 1.0em;
+        width: unset;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #start-new-game-btn {
+        font-size: 1.0em;
     }
 }
