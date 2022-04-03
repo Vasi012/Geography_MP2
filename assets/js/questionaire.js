@@ -1,504 +1,504 @@
 var quizQuestionsDataBase = [
     {
-        question:"add here",
+        question:"What is the name of the tallest mountain in the world?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Mount Matterhorn"},
+            {answer: "Mount Toro"},
+            {answer: "Mount Everest"},
+            {answer: "Mount Blanc"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Mount Everest",
     },
     {
-        question:"add here",
+        question:"Which country has the largest population in the world?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "America"},
+            {answer: "Russia"},
+            {answer: "India"},
+            {answer: "China"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "China",
     },
     {
-        question:"add here",
+        question:"What are the names of the seven continents of the world?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Asia, Africa, North America, South America, Antarctica, Europe, Australia"},
+            {answer: "Asia, Africa, Russia, South America, Antarctica, Europe, Australia"},
+            {answer: "Asia, Africa, United Kingdom, South America, Antarctica, Europe, Australia"},
+            {answer: "Asia, Africa, Lyon, South America, Antarctica, Europe, Australia"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Asia, Africa, North America, South America, Antarctica, Europe, Australia",
     },
     {
-        question:"add here",
+        question:"What are the names of the five oceans of the world?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Atlantic, Pacific, Indian, Arctic, and the Antarctic"},
+            {answer: "Atlantic, Norwegian, Indian, Arctic, and the Antarctic"},
+            {answer: "Atlantic, North, Indian, Arctic, and the Antarctic"},
+            {answer: "Atlantic, Black, Indian, Arctic, and the Antarctic"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Atlantic, Pacific, Indian, Arctic, and the Antarctic",
     },
     {
-        question:"add here",
+        question:"What is the name of the longest river in Africa?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "The River Thames"},
+            {answer: "The Loire River"},
+            {answer: "The Nile River"},
+            {answer: "The Mayenne River"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "The Nile River",
     },
     {
-        question:"add here",
+        question:"What American city is the Golden Gate Bridge located in?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "San Francisco"},
+            {answer: "London Bridge"},
+            {answer: "Brooklyn Bridge"},
+            {answer: "Sydney Harbour Bridge"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "San Francisco",
     },
     {
-        question:"add here",
+        question:"What is the capital of Mexico?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Mexico City"},
+            {answer: "London"},
+            {answer: "Medellin"},
+            {answer: "Guyana"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Mexico City",
     },
     {
-        question:"add here",
+        question:"What is the name of the largest country in the world?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "India"},
+            {answer: "America"},
+            {answer: "Russia "},
+            {answer: "China"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Russia",
     },
     {
-        question:"add here",
+        question:"What is the capital of Canada?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Ottawa"},
+            {answer: "Paris"},
+            {answer: "Washington"},
+            {answer: "Montreal"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Ottawa",
     },
 
     {
-        question:"add here",
+        question:"What is the name of the largest ocean in the world?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "The Pacific Ocean"},
+            {answer: "The North Atlantic Ocean"},
+            {answer: "The Indian Ocean"},
+            {answer: "The Southern Ocean"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "The Pacific Ocean",
     },
     {
-        question:"add here",
+        question:"What country are the Great Pyramids of Giza located in?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "London"},
+            {answer: "Angola"},
+            {answer: "Egypt"},
+            {answer: "Sudan"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Egypt",
     },
     {
-        question:"add here",
+        question:"What is the capital of Thailand?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Myanmar"},
+            {answer: "Zambia"},
+            {answer: "Chad"},
+            {answer: "Bangkok"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Bangkok",
     },
     {
-        question:"add here",
+        question:"What is the name of the smallest country in the world?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Slovenia"},
+            {answer: "Croatia"},
+            {answer: "The Vatican City"},
+            {answer: "Romania"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "The Vatican City",
     },
     {
-        question:"add here",
+        question:"What country has the most natural lakes?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Canada"},
+            {answer: "Russia"},
+            {answer: "France"},
+            {answer: "Spain"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Canada",
     },
     {
-        question:"add here",
+        question:"How many States does the United States consist of?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "51"},
+            {answer: "50"},
+            {answer: "49"},
+            {answer: "48"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "50",
     },
     {
-        question:"add here",
+        question:"What planet is closest to Earth?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Saturn"},
+            {answer: "Venus"},
+            {answer: "Mars"},
+            {answer: "Moon"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Venus",
     },
     {
-        question:"add here",
+        question:"Which country is also called The Netherlands?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Amsterdam"},
+            {answer: "Rotterdam"},
+            {answer: "Holland"},
+            {answer: "The Netherlands"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Holland",
     },
     {
-        question:"add here",
+        question:"What is the coldest place on Earth?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Antarctica"},
+            {answer: "North Pole"},
+            {answer: "Scotland"},
+            {answer: "Greenland"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Antarctica",
     },
     {
-        question:"add here",
+        question:"What is the official currency of the United Kingdom?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "RON"},
+            {answer: "Pound sterling"},
+            {answer: "Euros"},
+            {answer: "Dollars"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Pound sterling",
     },
     {
-        question:"add here",
+        question:"Where are the Spanish Steps located?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Madrid, Spain"},
+            {answer: "Athens, Greece"},
+            {answer: "Rome, Italy"},
+            {answer: "Porto, Portugal"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Rome, Italy",
     },
     {
-        question:"add here",
+        question:"How many countries are there in the United Kingdom?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "3"},
+            {answer: "4"},
+            {answer: "2"},
+            {answer: "5"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "4",
     },
     {
-        question:"add here",
+        question:"What is the capital of Senegal?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Monaco"},
+            {answer: "Andorra"},
+            {answer: "Dakar"},
+            {answer: "Rabat"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Dakar",
     },
     {
-        question:"add here",
+        question:"How many time zones does Russia have?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "1"},
+            {answer: "8"},
+            {answer: "23"},
+            {answer: "11"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "11",
     },
     {
-        question:"add here",
+        question:"What is the name of the tallest mountain in Canada?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Mount Logan"},
+            {answer: "Mount Cairngorm"},
+            {answer: "Mount Rinnes"},
+            {answer: "Mount Beinn Bhan"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Mount Logan",
     },
     {
-        question:"add here",
+        question:"What country does the Rhine River run through?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Dublin"},
+            {answer: "Germany"},
+            {answer: "Danemark"},
+            {answer: "Paris"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Germany",
     },
     {
-        question:"add here",
+        question:"What is the name of the largest city in Australia?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Canberra"},
+            {answer: "Melbourne"},
+            {answer: "Brisbane"},
+            {answer: "Sydney"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Brisbane",
     },
     {
-        question:"add here",
+        question:"What is the name of the second tallest mountain in the world?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Teallaach"},
+            {answer: "Ben More Assynt"},
+            {answer: "Slioch"},
+            {answer: "K2"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "K2",
     },
     {
-        question:"add here",
+        question:"What is the capital of Nova Scotia?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "HSBC"},
+            {answer: "Halifax"},
+            {answer: "Lloyds"},
+            {answer: "NatWest"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Halifax",
     },
     {
-        question:"add here",
+        question:"What country first used tinsel as a holiday tree decoration?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "German"},
+            {answer: "Italy"},
+            {answer: "Dublin"},
+            {answer: "UK"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "German",
     },
     {
-        question:"add here",
+        question:"What season does Australia experience in December?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Autumn"},
+            {answer: "Spring"},
+            {answer: "Winter"},
+            {answer: "Summer"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Summer",
     },
     {
-        question:"add here",
+        question:"Peking Duck is the national dish of what country?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Japan"},
+            {answer: "China"},
+            {answer: "Malaysia"},
+            {answer: "Philippies"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "China",
     },
     {
-        question:"add here",
+        question:"In which European city was the first organized marathon held?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Poland"},
+            {answer: "Belgium"},
+            {answer: "Italy"},
+            {answer: "Athens"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Athens",
     },
     {
-        question:"add here",
+        question:"What country formerly ruled Iceland?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Denmark"},
+            {answer: "Iceland"},
+            {answer: "Ireland"},
+            {answer: "Sweden"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Denmark",
     },
     {
-        question:"add here",
+        question:"Which continent is Cambodia located in?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "North America"},
+            {answer: "Asia"},
+            {answer: "Australia"},
+            {answer: "Europe"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Asia",
     },
     {
-        question:"add here",
+        question:"What country is known to have the best quality tap water?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "United Kingdom"},
+            {answer: "Switzerland"},
+            {answer: "New York"},
+            {answer: "Bulgaria"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Switzerland",
     },
     {
-        question:"add here",
+        question:"What city is known as the Glass Capital of the World?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Mali"},
+            {answer: "Cuba"},
+            {answer: "Toledo"},
+            {answer: "New York"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Toledo",
     },
     {
-        question:"add here",
+        question:"How many stars are on the Australian flag?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "12s"},
+            {answer: "6"},
+            {answer: "4"},
+            {answer: "5"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "6",
     },
     {
-        question:"add here",
+        question:"Which direction do latitude lines run on a globe?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Left to right"},
+            {answer: "Right to left"},
+            {answer: "Right to right"},
+            {answer: "Left to left"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Left to right",
     },
     {
-        question:"add here",
+        question:"What is the capital of Jamaica?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Libya"},
+            {answer: "Chad"},
+            {answer: "Niger"},
+            {answer: "Kingston"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Kingston",
     },
     {
-        question:"add here",
+        question:"What is Europe named after",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "A princess from Spain mythology"},
+            {answer: "A princess from Ireland mythology"},
+            {answer: "A princess from Greek mythology"},
+            {answer: "A princess from Rome mythology"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "A princess from Greek mythology",
     },
     {
-        question:"add here",
+        question:"What country was not part of the Soviet Union?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Romania"},
+            {answer: "Bulgaria"},
+            {answer: "Ukraine"},
+            {answer: "Latvia"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Romania",
     },
     {
-        question:"add here",
+        question:"Mt. Fuji is the highest point located in which Asian country?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Russia"},
+            {answer: "Japan"},
+            {answer: "North Korea"},
+            {answer: "South Korea"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Japan",
     },
     {
-        question:"add here",
+        question:" How many time zones does Australia have?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "3"},
+            {answer: "1"},
+            {answer: "2"},
+            {answer: "4"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "3",
     },
     {
-        question:"add here",
+        question:"How many countries are located in the Southern Hemisphere?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "32"},
+            {answer: "42"},
+            {answer: "52"},
+            {answer: "22"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "32",
     },
     {
-        question:"add here",
+        question:"What is the largest country in South America?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Zambia"},
+            {answer: "Algeria"},
+            {answer: "Brazil"},
+            {answer: "Ethiopia"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Brazil",
     },
     {
-        question:"add here",
+        question:"What country ends with the letter Q?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Maliq"},
+            {answer: "Swedenq"},
+            {answer: "Kyrgyzstaq"},
+            {answer: "Chinq"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Iraq",
     },
     {
-        question:"add here",
+        question:"How many countries are there in Africa?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "54"},
+            {answer: "56"},
+            {answer: "32"},
+            {answer: "55"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "54",
     },
     {
-        question:"add here",
+        question:"In which country is the Leaning Tower of Pisa located?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Italy"},
+            {answer: "Spain"},
+            {answer: "Greece"},
+            {answer: "Turkey"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Italy",
     },
     {
-        question:"add here",
+        question:"What is Belgium’s nickname?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "The Cockpit of America"},
+            {answer: "The Cockpit of Australia"},
+            {answer: "The Cockpit of Europe"},
+            {answer: "The Cockpit of Asia"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "The Cockpit of Europe",
     },
     {
-        question:"add here",
+        question:"What country has pyramids older than Egypt?",
         answers: [
-            {answer: "ADD"},
-            {answer: "add"},
-            {answer: "ADD"},
-            {answer: "add"}
+            {answer: "Egypt"},
+            {answer: "Sudan"},
+            {answer: "Yemen"},
+            {answer: "Libya"}
         ],
-        correctAnswer: "add",
+        correctAnswer: "Sudan",
     },
 ]
 

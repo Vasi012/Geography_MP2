@@ -134,10 +134,12 @@ header button:hover {
 
 .btn-grid {
     align-content: center;
-    align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 0);
     gap: 10px;
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
 }
 
 /*Submit answer button*/
