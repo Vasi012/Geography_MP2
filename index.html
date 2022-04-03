@@ -52,9 +52,29 @@
             <button id="button-b" class="btn">B.</button>
             <button id="button-c" class="btn">C.</button>
             <button id="button-d" class="btn">D.</button>
+
+            <!--Submit Button-->
+            <button id="submit-btn" data-type="submit" class="submit-btn">Submit Answer: </button>
+            <button id="next-btn" data-type="submit" class="next-btn hide">Next Question <i
+                    class="fa-solid fa-arrow-right-from-bracket"></i></button>
+            <!--Number of the question-->
+            <div class="question-counter">
+                <p><span id="question-number">1</span>/<span>10</span></p>
+            </div>
+        </div>
+        <!--Result Display-->
+        <div id="result-box" class="hide">
+            <p>You achieved the score of: <span id="user-score">0</span>/10!</p>
+            <br>
+            <div id="personal-message">Personal message</div>
+            <button id="start-new-game-btn">Start a New Questionaire!</button>
         </div>
     </div>
-
+    <!--Footer-->
+    <footer class="dead-space"></footer>
+    <script src="https://kit.fontawesome.com/57a5431661.js" crossorigin="anonymous"></script>
+    <script type="module" src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/questionaire.js"></script>
 </body>
 
 </html>
