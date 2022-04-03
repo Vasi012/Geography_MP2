@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(0, 45, 194), rgb(238, 0, 0));
+    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 0));
     font-family: 'Lato', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,14 +39,14 @@ header button {
     border-radius: 30px;
     border-style: solid;
     border-width: 2px;
-    border-color: darkolivegreen;
+    border-color: rgb(162, 255, 0);
     text-align: center;
     margin: 10px auto;
     cursor: pointer;
 }
 
 header button:hover {
-    outline: 2px solid darkolivegreen;
+    outline: 2px solid rgb(162, 255, 0);
 }
 
 .modal {
@@ -90,16 +90,16 @@ header button:hover {
 
 /*Main body game field*/
 
-.game-field {
+.game-area {
     width: 80%;
     height: fit-content;
     margin: auto;
     text-align: center;
-    background-image: radial-gradient(red, blue, white);
+    background-image: radial-gradient(rgb(255, 102, 0), rgb(39, 231, 0), white);
     border-radius: 35px;
     border-style: double;
     border-width: 10px;
-    border-color: darkslateblue;
+    border-color: rgb(34, 0, 255);
     align-items: center;
     justify-content: center;
 }
@@ -117,11 +117,11 @@ header button:hover {
     letter-spacing: 1.2px;
     margin: 5px 10px;
     font-size: 1.4em;
-    background-color: darkslateblue;
+    background-color: rgb(34, 0, 255);
     border-radius: 35px;
     border-style: solid;
     border-width: 2px;
-    border-color: darkblue;
+    border-color: rgb(0, 170, 91);
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -129,7 +129,7 @@ header button:hover {
 }
 
 .btn:hover {
-    outline: 3px solid darkblue;
+    outline: 3px solid rgb(34, 0, 255);
 }
 
 .btn-grid {
@@ -195,7 +195,7 @@ header button:hover {
     top: 30px;
     padding: 10px 20px;
     text-align: center;
-    background-color: lightcyan;
+    background-color: rgb(21, 255, 0);
     border-radius: 35px;
     border-style: solid;
 }
@@ -366,6 +366,12 @@ header button:hover {
     }
 
     .next-btn {
+        margin: 30px auto;
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+
+    .submit-btn {
         margin: 30px auto;
         padding: 10px 20px;
         font-size: 1.1em;

@@ -1,6 +1,4 @@
-import {
-    quizQuestionsDataBase
-} from "../js/questionaire.js";
+import { quizQuestionsDataBase } from "../js/questionaire.js";
 
 //game instructions help
 
@@ -11,7 +9,7 @@ var modal = document.getElementById("gameHelp");
 var btn = document.getElementById("gameInstructions");
 
 //get span element that close the modal
-var span = document.getElementById("gameInstructions");
+var span = document.getElementsByClassName("close")[0];
 
 //when clicked open the modal
 btn.onclick = function () {
@@ -19,7 +17,6 @@ btn.onclick = function () {
 };
 
 //when clicked on <span> (x), close the modal
-
 span.onclick = function () {
     modal.style.display = "none";
 };
@@ -37,10 +34,10 @@ var quizQuestions = quizQuestionsDataBase;
 const startButton = document.getElementById("start-game");
 startButton.addEventListener("click", startGame);
 var selectedValue = null;
-let corectAnswerScore = 0;
-let incorectAnswerScore = 0;
+let correctAnswerScore = 0;
+let incorrectAnswerScore = 0;
 
-let shuffledQuestions, curentQuestionIndexNumber;
+let shuffledQuestions, currentQuestionIndexNumber;
 
 //Start game
 
@@ -49,7 +46,7 @@ function startGame(event) {
     startButton.classList.add("hide");
     document.getElementById("question").classList.remove("hide");
     shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
-    curentQuestionIndexNumber = 0;
+    currentQuestionIndexNumber = 0;
     document.getElementById("answer-buttons").classList.remove("hide");
     setNextQuestion();
     displayQuestion();
@@ -64,14 +61,14 @@ function displayNextQuestion(event) {
 
 //set next question - calls function above and pulls the questions out from the shuffled questions list
 function setNextQuestion() {
-    displayNextQuestion(shuffledQuestions[curentQuestionIndexNumber]);
+    displayNextQuestion(shuffledQuestions[currentQuestionIndexNumber]);
 }
 
 //keep the track of question number
 function questionTracker(event) {
-    curentQuestionIndexNumber += 1;
+    currentQuestionIndexNumber += 1;
     let nextQuestBtn = document.getElementById("next-btn");
-    if (curentQuestionIndexNumber == 10) {
+    if (currentQuestionIndexNumber == 10) {
         nextQuestBtn.innerHTML = "Show Results";
     };
 };
@@ -79,19 +76,19 @@ function questionTracker(event) {
 //display question
 function displayQuestion() {
     let theQ = document.getElementById("question"); //display the question
-    theQ.innerHTML = shuffledQuestions[curentQuestionIndexNumber].question;
+    theQ.innerHTML = shuffledQuestions[currentQuestionIndexNumber].question;
 
     let questionNumber = document.getElementById("question-number"); // display question number
-    questionNumber.innerHTML = curentQuestionIndexNumber + 1;
+    questionNumber.innerHTML = currentQuestionIndexNumber + 1;
 
     let a = document.getElementsByClassName("btn")[0];
-    a.innerHTML = shuffledQuestions[curentQuestionIndexNumber].answers[0].answer;
+    a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[0].answer;
     let b = document.getElementsByClassName("btn")[1];
-    a.innerHTML = shuffledQuestions[curentQuestionIndexNumber].answers[1].answer;
+    a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[1].answer;
     let c = document.getElementsByClassName("btn")[2];
-    a.innerHTML = shuffledQuestions[curentQuestionIndexNumber].answers[2].answer;
+    a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[2].answer;
     let d = document.getElementsByClassName("btn")[3];
-    a.innerHTML = shuffledQuestions[curentQuestionIndexNumber].answers[3].answer;
+    a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[3].answer;
 }
 
 //click and toggle the answers buttons
@@ -107,16 +104,16 @@ function answerHighlighted(event) {
 
 //reset all the background buttons color
 function resetBackgroundColor(event) {
-    let button = document.getElementsByClassName("btn");
+    let buttons = document.getElementsByClassName("btn");
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].style.backgroundColor = "darkseablue";
-    };
+    }
 };
 
 //event listners to the selected answer on onclicks
-let butons = document.getElementsByClassName("btn");
+let buttons = document.getElementsByClassName("btn");
 for (let i = 0; i < buttons.length; i++) {
-    let button = butons[i].addEventListener("click", resetBackgroundColor);
+    let button = buttons[i].addEventListener("click", resetBackgroundColor);
     button = buttons[i].addEventListener("click", answerHighlighted);
     button = buttons[i].addEventListener("click", answerSelected);
 };
@@ -127,18 +124,18 @@ function checkAnswer(event) {
     if (selectedValue === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
         for (let i = 0; i < buttons.length; i++) {
             if (buttons[i].textContent === selectedValue) {
-                buttons[i].style.backgroundColor = "green";
-            };
-        };
-    } else if (selectedValue !== shuffledQuestions[curentQuestionIndexNumber].correctAnswer) {
+            buttons[i].style.backgroundColor = "green";
+            }
+        }
+    } else if (selectedValue !== shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
         for (let i = 0; i < buttons.length; i++) {
             if (buttons[i].textContent === selectedValue) {
-                butons[i].style.backgroundColor = "crimson";
-            } else if (buttons[i].textContent === shuffledQuestions[curentQuestionIndexNumber].correctAnswer) {
+                buttons[i].style.backgroundColor = "crimson";
+            } else if (buttons[i].textContent === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
                 buttons[i].style.backgroundColor = "green";
-            };
-        };
-    };
+            }
+        }
+    }
 };
 
 //score counter
@@ -146,8 +143,8 @@ function countScore(event) {
     if (selectedValue === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
         correctAnswerScore += 1;
     } else {
-        incorectAnswerScore += 1;
-    };
+        incorrectAnswerScore += 1;
+    }
 };
 
 //creeate variable of the submitAnswers and nextQuestions button
@@ -176,9 +173,9 @@ submitAnsBtn.addEventListener("click", submitAnswer);
 
 //check when reached 10 questions that will end the game and return the score
 function returnResults(event) {
-    let totalScore = correctAnswerScore + incorectAnswerScore;
+    let totalScore = correctAnswerScore + incorrectAnswerScore;
     if (totalScore === 10) {
-        document.getElementById("question").classList("hide");
+        document.getElementById("question").classList.add("hide");
         document.getElementById("answer-buttons").classList.add("hide");
         document.getElementById("next-btn").classList.add("hide");
         document.getElementById("submit-btn").classList.add("hide");
@@ -188,7 +185,7 @@ function returnResults(event) {
     let userScore = document.getElementById("user-score");
     userScore.innerHTML = correctAnswerScore;
     let personalMessage = document.getElementById("personal-message");
-    if (corectAnswerScore == 0) {
+    if (correctAnswerScore == 0) {
         personalMessage.innerHTML = "Opps...Looks like you have to learn some geography... Try again!"
     } else if (correctAnswerScore < 3) {
         personalMessage.innerHTML = "Not to bad, but i'm sure you can do better next time!"
@@ -208,9 +205,9 @@ nextQuestBtn.addEventListener("click", returnResults);
 
 //reset Values
 function resetGameValues(event) {
-    curentQuestionIndexNumber = 1;
-    corectAnswerScore = 0;
-    incorectAnswerScore = 0;
+    currentQuestionIndexNumber = 1;
+    correctAnswerScore = 0;
+    incorrectAnswerScore = 0;
     document.getElementById("submit-btn").classList.remove("hide");
     document.getElementById("result-box").classList.add("hide");
     document.getElementById("next-btn").innerHTML = "Next Question";
