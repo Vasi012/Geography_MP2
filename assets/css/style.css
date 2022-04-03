@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Syne:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Nunito:ital,wght@0,300;1,300;1,400&display=swap');
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -13,14 +11,12 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 0));
-    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient( white, green);
+    font-family: "Nunito", sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/*Header Title*/
-
+/* TITLE */
 h1 {
     margin: 30px 0 30px 0;
     font-family: 'Lato', sans-serif;
@@ -28,8 +24,7 @@ h1 {
     font-size: 4em;
 }
 
-/*Instruction Style*/
-
+/* Instructions style */
 header button {
     display: flex;
     width: fit-content;
@@ -37,33 +32,33 @@ header button {
     padding: 0 3%;
     background-color: rgb(245, 245, 245, 0.3);
     border-radius: 30px;
-    border-style: solid;
+    border-style:solid;
     border-width: 2px;
-    border-color: rgb(162, 255, 0);
+    border-color: darkolivegreen;
     text-align: center;
     margin: 10px auto;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 header button:hover {
-    outline: 2px solid rgb(162, 255, 0);
+    outline: 2px solid darkolivegreen;
 }
 
 .modal {
     display: none;
-    position: fixed;
+    position: fixed; 
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
 }
 
-/*Modal Content*/
+/* Modal Content */
 .hidden-instructions {
     background-color: #fefefe;
     margin: auto;
@@ -71,35 +66,34 @@ header button:hover {
     border: 1px solid #888;
     width: 80%;
     font-size: 1.5em;
-}
-
-/*The Close Button*/
-.close {
+  }
+  
+  /* The Close Button */
+  .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
+  }
+  
+  .close:hover,
+  .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
+  }
 
-/*Main body game field*/
-
+/* MAIN BODY GAME AREA */
 .game-area {
     width: 80%;
     height: fit-content;
     margin: auto;
     text-align: center;
-    background-image: radial-gradient(rgb(255, 102, 0), rgb(39, 231, 0), white);
+    background-image: radial-gradient( green, yellowgreen, yellow);
     border-radius: 35px;
     border-style: double;
     border-width: 10px;
-    border-color: rgb(34, 0, 255);
+    border-color: darkseagreen;
     align-items: center;
     justify-content: center;
 }
@@ -117,11 +111,11 @@ header button:hover {
     letter-spacing: 1.2px;
     margin: 5px 10px;
     font-size: 1.4em;
-    background-color: rgb(34, 0, 255);
+    background-color: darkseagreen;
     border-radius: 35px;
-    border-style: solid;
+    border-style:solid;
     border-width: 2px;
-    border-color: rgb(0, 170, 91);
+    border-color: darkolivegreen;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -129,21 +123,18 @@ header button:hover {
 }
 
 .btn:hover {
-    outline: 3px solid rgb(34, 0, 255);
+    outline: 3px solid darkolivegreen;
 }
 
-.btn-grid {
+.btm-grid {
     align-content: center;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 0);
     gap: 10px;
-    justify-content: center;
-    align-items: start;
-    justify-items: center;
 }
 
-/*Submit answer button*/
-
+/* Submit Answer Button */ 
 .submit-btn {
     display: grid;
     padding: 10px 20px;
@@ -153,38 +144,38 @@ header button:hover {
     font-size: 1.3em;
     background-color: lightgreen;
     border-radius: 35px;
-    border-style: solid;
+    border-style:solid;
     border-width: 2px;
-    border-color: darkblue;
+    border-color: darkolivegreen;
     cursor: pointer;
 }
 
 .submit-btn:hover {
-    outline: 2px solid darkblue;
+    outline: 2px solid darkolivegreen;
 }
 
-/*Next Question Button*/
+/* Next Question Button */
 .next-btn {
     display: grid;
+    /* top: 30px; */
     padding: 10px 20px;
     text-align: center;
     margin: auto;
     margin-top: 70px;
     font-size: 1.3em;
-    background-color: lightcoral;
+    background-color: lightgreen;
     border-radius: 35px;
-    border-style: solid;
+    border-style:solid;
     border-width: 2px;
-    border-color: darkblue;
+    border-color: darkolivegreen;
     cursor: pointer;
 }
 
 .next-btn:hover {
-    outline: 2px solid darkblue;
+    outline: 2px solid darkolivegreen;
 }
 
-/*Start Game Button*/
-
+/* Start Game Button */
 .start-game {
     display: flex;
     justify-content: center;
@@ -197,19 +188,18 @@ header button:hover {
     top: 30px;
     padding: 10px 20px;
     text-align: center;
-    background-color: rgb(21, 255, 0);
+    background-color: lightgreen;
     border-radius: 35px;
-    border-style: solid;
+    border-style:solid;
 }
 
 .start-game:hover {
     outline: 2px solid black;
 }
 
-/*Question Counter*/
-
+/* Question Counter */
 .question-counter {
-    margin: 10px 0 35px 0;
+    margin: 10px 0 35px 0; 
     padding-bottom: 10px;
     font-size: 1.4em;
     font-weight: 700;
@@ -219,63 +209,61 @@ header button:hover {
     height: 400px;
 }
 
-/*Media queries*/
-/*Screen size for larger to to medium size devices from 780px down*/
+/* up the screen dead space for devices from 780px of full height to larger devices and monitors */
 @media screen and (min-height: 780px) {
     .dead-space {
         height: 650px;
     }
-
-
-    .hide {
-        display: none;
-    }
-
-    /*Result box*/
-    #result-box {
-        font-size: 1.4em;
-        font-weight: 900;
-        margin: 70px 40px 70px 40px;
-        background-color: rgb(107, 179, 189, 0.7);
-        padding: 30px;
-        border-radius: 35px;
-        border-style: solid;
-        border-color: rgb(71, 112, 112);
-        border-width: 3px;
-    }
-
-    #person-message {
-        margin-top: 30px;
-    }
-
-    #start-new-game-btn {
-        display: grid;
-        top: 30px;
-        padding: 10px 20px;
-        text-align: center;
-        margin: auto;
-        margin-top: 60px;
-        font-size: 1.3em;
-        background-color: lightblue;
-        border-radius: 35px;
-        border-style: solid;
-        border-width: 2px;
-        border-color: darkblue;
-        cursor: pointer;
-    }
 }
 
-/*Screen size for larger to to medium size devices from 580px down*/
+.hide {
+    display: none;
+}
+
+/* RESULT BOX */
+#result-box {
+    font-size: 1.4em;
+    font-weight: 900;
+    margin: 70px 40px 70px 40px;
+    background-color: rgb(107, 179, 189, 0.7);
+    padding: 30px;
+    border-radius: 35px;
+    border-style: solid;
+    border-color: rgb(71, 112, 112);
+    border-width: 3px;
+}
+
+#person-message {
+    margin-top: 30px;
+}
+
+#start-new-game-btn {
+    display: grid;
+    top: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    font-size: 1.3em;
+    background-color: lightgreen;
+    border-radius: 35px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: darkolivegreen;
+    cursor: pointer;
+}
+
+/* Change screen size from larger to Medium size devices from 580px down" */
 @media screen and (max-width: 580px) {
     header button {
         font-size: 1.1em;
     }
 
     #question {
-        margin: 20px 5px 20px 2px;
+        margin: 20px 5px 20px 5px;
         font-size: 1.3em;
     }
-
+    
     .btn {
         height: fit-content;
         letter-spacing: 1.2px;
@@ -301,7 +289,7 @@ header button:hover {
         padding: 10px 20px;
         font-size: 1.2em;
     }
-
+    
     .start-game {
         margin: 200px auto;
         font-size: 2.0em;
@@ -313,21 +301,21 @@ header button:hover {
         font-size: 1.2em;
         margin-bottom: 20px;
     }
-
+    
     #result-box {
         font-size: 1.2em;
     }
-
+    
     #person-message {
         margin-top: 30px;
     }
-
+    
     #start-new-game-btn {
         font-size: 1.2em;
     }
 }
 
-/*Screen size for larger to to medium size devices from 460px down*/
+/* Change screen size from larger to Medium size devices from 460px down" */
 @media screen and (max-width: 460px) {
     header button {
         font-size: 1.1em;
@@ -346,17 +334,17 @@ header button:hover {
         margin: 10px 5px 5px 5px;
         font-size: 3em;
     }
-
     #question {
         margin: 20px 5px 20px 5px;
         font-size: 1.2em;
     }
-
+    
     .btn {
         margin: 3px;
         padding: 3px;
         width: 80%;
-        letter-spacing: 1.0em;
+        letter-spacing: 1.2px;
+        font-size: 1.0em;
         height: fit-content;
     }
 
@@ -364,7 +352,7 @@ header button:hover {
         top: 30px;
         padding: 10px 20px;
         margin-top: 30px;
-        font-size: 1.1 em;
+        font-size: 1.1em;
     }
 
     .next-btn {
@@ -383,15 +371,15 @@ header button:hover {
         font-size: 1.0em;
         margin-bottom: 20px;
     }
-
+    
     #result-box {
         font-size: 1.1em;
     }
-
+    
     #person-message {
         margin-top: 30px;
     }
-
+    
     #start-new-game-btn {
         font-size: 1.0em;
     }
@@ -401,7 +389,8 @@ header button:hover {
     }
 }
 
-/*Screen size for larger to to medium size devices from 300px down*/
+
+/* Change screen size from larger to Medium size devices from 300px down" */
 @media screen and (max-width: 300px) {
     header button {
         font-size: 1.1em;
@@ -411,11 +400,10 @@ header button:hover {
         margin: 10px 5px 5px 5px;
         font-size: 2.6em;
     }
-
     #question {
         font-size: 1.1em;
     }
-
+    
     .btn {
         font-size: 0.9em;
     }
@@ -431,7 +419,7 @@ header button:hover {
     .submit-btn {
         font-size: 1.0em;
     }
-
+    
     .start-game {
         margin: 200px auto;
         padding: 10px 10px;
@@ -444,7 +432,7 @@ header button:hover {
         font-size: 1.0em;
         margin-bottom: 20px;
     }
-
+    
     #result-box {
         font-size: 1.0em;
         width: unset;
@@ -454,7 +442,7 @@ header button:hover {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
+    
     #start-new-game-btn {
         font-size: 1.0em;
     }
