@@ -1,34 +1,35 @@
-import { quizQuestionsDataBase } from "../js/questionaire.js";
 
-//game instructions help
+import { quizQuestionsDataBase } from "../js/game_questions.js";
 
-//get the modal
+// GAME INSTRUCTIONS HELP MODAL // 
+
+// Get the modal
 var modal = document.getElementById("gameHelp");
 
-//get the button that opens the modal
+// Get the button that opens the modal
 var btn = document.getElementById("gameInstructions");
 
-//get span element that close the modal
+// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-//when clicked open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
 };
 
-//when clicked on <span> (x), close the modal
-span.onclick = function () {
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
     modal.style.display = "none";
+  }
 };
 
-//when clicked outside modal, close the modal
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-};
-
-//Qestions array
+// QUIZ QUESTIONS ARRAY
 var quizQuestions = quizQuestionsDataBase;
 
 const startButton = document.getElementById("start-game");
@@ -39,182 +40,183 @@ let incorrectAnswerScore = 0;
 
 let shuffledQuestions, currentQuestionIndexNumber;
 
-//Start game
-
+// START GAME //
 function startGame(event) {
-    console.log("started");
-    startButton.classList.add("hide");
-    document.getElementById("question").classList.remove("hide");
-    shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
-    currentQuestionIndexNumber = 0;
-    document.getElementById("answer-buttons").classList.remove("hide");
-    setNextQuestion();
-    displayQuestion();
-};
+  console.log("started");
+  startButton.classList.add("hide");
+  document.getElementById("question").classList.remove("hide");
+  shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
+  currentQuestionIndexNumber = 0;
+  document.getElementById("answer-buttons").classList.remove("hide");
+  setNextQuestion();
+  displayQuestion();
+}
 
-//display next question
+// DISPLAY NEXT QUESTION //
 function displayNextQuestion(event) {
-    document.getElementById("next-btn").classList.add("hide");
-    document.getElementById("submit-btn").classList.remove("hide");
-    displayQuestion();
-};
+  document.getElementById("next-btn").classList.add("hide");
+  document.getElementById("submit-btn").classList.remove("hide");
+  displayQuestion();
+}
 
-//set next question - calls function above and pulls the questions out from the shuffled questions list
+//SET NEXT QUESTION - calls function above and pulls the question out from the shuffled questions list from the index of what question the game is on //
 function setNextQuestion() {
-    displayNextQuestion(shuffledQuestions[currentQuestionIndexNumber]);
+  displayNextQuestion(shuffledQuestions[currentQuestionIndexNumber]);
 }
 
-//keep the track of question number
+// KEEP TRACK OF QUESTION NUMBER - when it reaches ten, the inner text prompts show results indicating the end of the 10 questions in the game played //
 function questionTracker(event) {
-    currentQuestionIndexNumber += 1;
-    let nextQuestBtn = document.getElementById("next-btn");
-    if (currentQuestionIndexNumber == 10) {
-        nextQuestBtn.innerHTML = "Show Results";
-    };
-};
+  currentQuestionIndexNumber +=1;
+  let nextQuestBtn = document.getElementById("next-btn");
+  if (currentQuestionIndexNumber == 10) {
+    nextQuestBtn.innerHTML = "Show Results";
+  }
+}
 
-//display question
+// DISPLAY QUESTION //
 function displayQuestion() {
-    let theQ = document.getElementById("question"); //display the question
-    theQ.innerHTML = shuffledQuestions[currentQuestionIndexNumber].question;
+  let theQ = document.getElementById("question"); // display question
+  theQ.innerHTML = shuffledQuestions[currentQuestionIndexNumber].question;
+ 
+  let questionNumber = document.getElementById("question-number"); // display question number
+  questionNumber.innerHTML = currentQuestionIndexNumber + 1;
 
-    let questionNumber = document.getElementById("question-number"); // display question number
-    questionNumber.innerHTML = currentQuestionIndexNumber + 1;
-
-    let a = document.getElementsByClassName("btn")[0];
-    a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[0].answer;
-    let b = document.getElementsByClassName("btn")[1];
-    b.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[1].answer;
-    let c = document.getElementsByClassName("btn")[2];
-    c.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[2].answer;
-    let d = document.getElementsByClassName("btn")[3];
-    d.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[3].answer;
+  let a = document.getElementsByClassName("btn")[0]; // display answers in button fields
+  a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[0].answer;
+  let b = document.getElementsByClassName("btn")[1];
+  b.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[1].answer;
+  let c = document.getElementsByClassName("btn")[2];
+  c.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[2].answer;
+  let d = document.getElementsByClassName("btn")[3];
+  d.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[3].answer;
 }
 
-//click and toggle the answers buttons
-
+// CLICK AND TOGGLE THE ANSWER BUTTONS //
 function answerSelected(event) {
-    selectedValue = this.innerHTML;
+  selectedValue = this.innerHTML;
 }
 
-//selected answer is highlithed
+// SELECTED ANSWER IS HIGHLIGHTED //
 function answerHighlighted(event) {
-    this.style.backgroundColor = "teal";
+ this.style.backgroundColor = "teal";
 }
 
-//reset all the background buttons color
+// RESET ALL THE BACKGROUND BUTTONS COLOR //
 function resetBackgroundColor(event) {
-    let buttons = document.getElementsByClassName("btn");
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].style.backgroundColor = "darkseablue";
-    }
-};
+  let buttons = document.getElementsByClassName("btn");
+  for (let i = 0; i < buttons.length; i++) {
+  buttons[i].style.backgroundColor = "darkseagreen";
+  }
+}
 
-//event listners to the selected answer on onclicks
+// EVENT LISTENERS TO THE SELECTED ANSWERS ON ONCLICKS //
 let buttons = document.getElementsByClassName("btn");
 for (let i = 0; i < buttons.length; i++) {
-    let button = buttons[i].addEventListener("click", resetBackgroundColor);
-    button = buttons[i].addEventListener("click", answerHighlighted);
-    button = buttons[i].addEventListener("click", answerSelected);
-};
+  let button = buttons[i].addEventListener("click", resetBackgroundColor); // call the reset first so on every change of selected answer resets before the rest of the code runs
+  button = buttons[i].addEventListener("click", answerHighlighted);
+  button = buttons[i].addEventListener("click", answerSelected);
+}
 
-//check if the answer is correct
+// CHECK ANSWER //
 function checkAnswer(event) {
-    let buttons = document.getElementsByClassName("btn");
-    if (selectedValue === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
-        for (let i = 0; i < buttons.length; i++) {
-            if (buttons[i].textContent === selectedValue) {
-            buttons[i].style.backgroundColor = "green";
-            }
-        }
-    } else if (selectedValue !== shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
-        for (let i = 0; i < buttons.length; i++) {
-            if (buttons[i].textContent === selectedValue) {
-                buttons[i].style.backgroundColor = "crimson";
-            } else if (buttons[i].textContent === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
-                buttons[i].style.backgroundColor = "green";
-            }
-        }
+  let buttons = document.getElementsByClassName("btn");
+  if (selectedValue === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
+    for (let i = 0; i < buttons.length; i++) {
+      if (buttons[i].textContent === selectedValue) {
+        buttons[i].style.backgroundColor = "green";
+      }
     }
-};
+  } else if (selectedValue !== shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
+    for (let i = 0; i < buttons.length; i++) {
+      if (buttons[i].textContent === selectedValue) {
+        buttons[i].style.backgroundColor = "crimson";
+      } else if (buttons[i].textContent === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
+        buttons[i].style.backgroundColor = "green";
+      }
+    }
+  }
+}
 
-//score counter
+// SCORE COUNTER //
 function countScore(event) {
-    if (selectedValue === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
-        correctAnswerScore += 1;
-    } else {
-        incorrectAnswerScore += 1;
-    }
-};
+  if (selectedValue === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
+    correctAnswerScore += 1;
+  } else {
+    incorrectAnswerScore += 1;
+  }
+}
 
-//creeate variable of the submitAnswers and nextQuestions button
+// creeate variables of the submitAns and nextQuest btn 
 let submitAnsBtn = document.getElementById("submit-btn");
 let nextQuestBtn = document.getElementById("next-btn");
 
-//submit answer & next question button
-function nextQuestionsButtonDisplay(event) {
-    document.getElementById("next-btn").classList.remove("hide");
-    document.getElementById("submit-btn").classList.add("hide");
+// SUBMIT ANSWER & NEXT QUESTION BUTTON //
+function nextQuestionButtonDisplay(event) {
+  document.getElementById("next-btn").classList.remove("hide");
+  document.getElementById("submit-btn").classList.add("hide");
 }
 
-//submit answer
-function submitAnswer(event) {
-    if (selectedValue == null) {
-        return alert("Please select an answer");
-    } else if (selectedValue != null) {
-        checkAnswer();
-        countScore();
-        nextQuestionsButtonDisplay();
-        questionTracker();
-    };
-};
+// SUBMIT ANSWER - WITH BOOLEAN LOGIC PREVENTING BUG OF NO SELECT VALUE PASSING TRUE //
+function SubmitAnswer(event) {
+  if (selectedValue == null) {
+    return alert("Please select an answer");
+  } else if (selectedValue != null) {
+    checkAnswer();
+    countScore();
+    nextQuestionButtonDisplay();
+    selectedValue = null;
+    questionTracker();
+  }
+}
 
-submitAnsBtn.addEventListener("click", submitAnswer);
+submitAnsBtn.addEventListener("click", SubmitAnswer);
 
-//check when reached 10 questions that will end the game and return the score
+// CHECK WHEN REACHED 10 QUESIIONS THAT WILL END GAME AND WILL RETURN THE SCORE //
 function returnResults(event) {
-    let totalScore = correctAnswerScore + incorrectAnswerScore;
-    if (totalScore === 10) {
-        document.getElementById("question").classList.add("hide");
-        document.getElementById("answer-buttons").classList.add("hide");
-        document.getElementById("next-btn").classList.add("hide");
-        document.getElementById("submit-btn").classList.add("hide");
-        document.getElementById("result-box").classList.remove("hide");
-    };
-    //variable of userScore
-    let userScore = document.getElementById("user-score");
-    userScore.innerHTML = correctAnswerScore;
-    let personalMessage = document.getElementById("personal-message");
-    if (correctAnswerScore == 0) {
-        personalMessage.innerHTML = "Opps...Looks like you have to learn some geography... Try again!"
-    } else if (correctAnswerScore < 3) {
-        personalMessage.innerHTML = "Not to bad, but i'm sure you can do better next time!"
-    } else if (correctAnswerScore < 6) {
-        personalMessage.innerHTML = "Well, it's better then nothing :), try again!"
-    } else if (corectAnswerScore < 9) {
-        personalMessage.innerHTML = "Wow you are amazing, try again and get 10/10, let see if you can!"
-    } else if (corectAnswerScore == 10) {
-        personalMessage.innerHTML = "WOW 10/10 YOU ARE AWESOME. Ladies and gentalman's THE WINNER!"
-    }
-};
+  let totalScore = correctAnswerScore + incorrectAnswerScore;
+  if (totalScore === 10) {
+    document.getElementById("question").classList.add("hide");
+    document.getElementById("answer-buttons").classList.add("hide");
+    document.getElementById("next-btn").classList.add("hide");
+    document.getElementById("submit-btn").classList.add("hide"); // up to here to clear and hide elements in the box
+    document.getElementById("result-box").classList.remove("hide");
+  }
 
-//displany Next QUestion
+// Create variable of userScore
+ let userScore = document.getElementById("user-score");
+ userScore.innerHTML = correctAnswerScore; // Display user score on the page
+
+ let personalMessage = document.getElementById("personal-message"); // code to display message based on score performance
+  if (correctAnswerScore == 0) {
+    personalMessage.innerHTML = "Yikes!, Unlucky there, better luck next time!";
+  } else if (correctAnswerScore < 3) {
+    personalMessage.innerHTML = "oh not too bad, keep going and try to beat this score!";
+  } else if (correctAnswerScore < 6) {
+    personalMessage.innerHTML = "Well done, you know some random stuff!";
+  } else if (correctAnswerScore < 9) {
+    personalMessage.innerHTML = "Wow someone is showing off their skills!";
+  } else if (correctAnswerScore == 10) {
+    personalMessage.innerHTML = "Wow 100% We are in the presence of a genius. Congratulations!";
+  }
+}
+
+// DISPLAY NEXT QUESTION - after submitted answer, prompt the next question //
 nextQuestBtn.addEventListener("click", displayNextQuestion);
 nextQuestBtn.addEventListener("click", resetBackgroundColor);
 nextQuestBtn.addEventListener("click", returnResults);
 
-//reset Values
+// RESET VALUES //
 function resetGameValues(event) {
-    currentQuestionIndexNumber = 1;
-    correctAnswerScore = 0;
-    incorrectAnswerScore = 0;
-    document.getElementById("submit-btn").classList.remove("hide");
-    document.getElementById("result-box").classList.add("hide");
-    document.getElementById("next-btn").innerHTML = "Next Question";
-};
+  currentQuestionIndexNumber = 1;
+  correctAnswerScore = 0;
+  incorrectAnswerScore = 0;
+  document.getElementById("submit-btn").classList.remove("hide"); // up to here to clear and hide elements in the box
+  document.getElementById("result-box").classList.add("hide");
+  document.getElementById("next-btn").innerHTML = "Next Question"; // reset the next button display for the rerunning of the game
+}
 
-//start a new game
-let startNewGameBtn = document.getElementById("start-new-game-btn");
+// START NEW GAME //
+ let startNewGameBtn = document.getElementById("start-new-game-btn");
 
 startNewGameBtn.addEventListener("click", resetGameValues);
 startNewGameBtn.addEventListener("click", startGame);
