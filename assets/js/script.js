@@ -40,13 +40,13 @@ function startGame(event) {
     document.getElementById("answer-buttons").classList.remove("hide");
     setNextQuestion();
     displayQuestion();
-};
+}
 //display next question
 function displayNextQuestion(event) {
     document.getElementById("next-btn").classList.add("hide");
     document.getElementById("submit-btn").classList.remove("hide");
     displayQuestion();
-};
+}
 //set next question - calls function above and pulls the questions out from the shuffled questions list
 function setNextQuestion() {
     displayNextQuestion(shuffledQuestions[currentQuestionIndexNumber]);
@@ -57,8 +57,8 @@ function questionTracker(event) {
     let nextQuestBtn = document.getElementById("next-btn");
     if (currentQuestionIndexNumber == 10) {
         nextQuestBtn.innerHTML = "Show Results";
-    };
-};
+    }
+}
 //display question
 function displayQuestion() {
     let theQ = document.getElementById("question"); //display the question
@@ -89,14 +89,14 @@ function resetBackgroundColor(event) {
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].style.backgroundColor = "darkseablue";
     }
-};
+}
 //event listners to the selected answer on onclicks
 let buttons = document.getElementsByClassName("btn");
 for (let i = 0; i < buttons.length; i++) {
     let button = buttons[i].addEventListener("click", resetBackgroundColor);
     button = buttons[i].addEventListener("click", answerHighlighted);
     button = buttons[i].addEventListener("click", answerSelected);
-};
+}
 //check if the answer is correct
 function checkAnswer(event) {
     let buttons = document.getElementsByClassName("btn");
@@ -115,7 +115,7 @@ function checkAnswer(event) {
             }
         }
     }
-};
+}
 //score counter
 function countScore(event) {
     if (selectedValue === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
@@ -123,7 +123,7 @@ function countScore(event) {
     } else {
         incorrectAnswerScore += 1;
     }
-};
+}
 //creeate variable of the submitAnswers and nextQuestions button
 let submitAnsBtn = document.getElementById("submit-btn");
 let nextQuestBtn = document.getElementById("next-btn");
@@ -141,8 +141,8 @@ function submitAnswer(event) {
         countScore();
         nextQuestionsButtonDisplay();
         questionTracker();
-    };
-};
+    }
+}
 submitAnsBtn.addEventListener("click", submitAnswer);
 //check when reached 10 questions that will end the game and return the score
 function returnResults(event) {
@@ -153,23 +153,23 @@ function returnResults(event) {
         document.getElementById("next-btn").classList.add("hide");
         document.getElementById("submit-btn").classList.add("hide");
         document.getElementById("result-box").classList.remove("hide");
-    };
+    }
     //variable of userScore
     let userScore = document.getElementById("user-score");
     userScore.innerHTML = correctAnswerScore;
     let personalMessage = document.getElementById("personal-message");
     if (correctAnswerScore == 0) {
-        personalMessage.innerHTML = "Opps...Looks like you have to learn some geography... Try again!"
+        personalMessage.innerHTML = "Opps...Looks like you have to learn some geography... Try again!";
     } else if (correctAnswerScore < 3) {
-        personalMessage.innerHTML = "Not to bad, but i'm sure you can do better next time!"
+        personalMessage.innerHTML = "Not to bad, but i'm sure you can do better next time!";
     } else if (correctAnswerScore < 6) {
-        personalMessage.innerHTML = "Well, it's better then nothing :), try again!"
+        personalMessage.innerHTML = "Well, it's better then nothing :), try again!";
     } else if (corectAnswerScore < 9) {
-        personalMessage.innerHTML = "Wow you are amazing, try again and get 10/10, let see if you can!"
+        personalMessage.innerHTML = "Wow you are amazing, try again and get 10/10, let see if you can!";
     } else if (corectAnswerScore == 10) {
-        personalMessage.innerHTML = "WOW 10/10 YOU ARE AWESOME. Ladies and gentalman's THE WINNER!"
+        personalMessage.innerHTML = "WOW 10/10 YOU ARE AWESOME. Ladies and gentalman's THE WINNER!";
     }
-};
+}
 //displany Next QUestion
 nextQuestBtn.addEventListener("click", displayNextQuestion);
 nextQuestBtn.addEventListener("click", resetBackgroundColor);
@@ -182,7 +182,7 @@ function resetGameValues(event) {
     document.getElementById("submit-btn").classList.remove("hide");
     document.getElementById("result-box").classList.add("hide");
     document.getElementById("next-btn").innerHTML = "Next Question";
-};
+}
 //start a new game
 let startNewGameBtn = document.getElementById("start-new-game-btn");
 startNewGameBtn.addEventListener("click", resetGameValues);
