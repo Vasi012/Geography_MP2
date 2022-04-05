@@ -68,13 +68,10 @@ function displayQuestion() {
     let a = document.getElementsByClassName("btn")[0];
     a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[0].answer;
     let b = document.getElementsByClassName("btn")[1];
-    a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[1].answer;
     b.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[1].answer;
     let c = document.getElementsByClassName("btn")[2];
-    a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[2].answer;
     c.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[2].answer;
     let d = document.getElementsByClassName("btn")[3];
-    a.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[3].answer;
     d.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[3].answer;
 }
 
