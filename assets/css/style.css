@@ -13,10 +13,13 @@
 }
 
 body {
-    background-image: linear-gradient(white, green);
+    background-image: url(/assets/images/Earth.jpg);
     font-family: "Nunito", sans-serif;
+    width: 100%;
+    margin: 0 auto;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /* TITLE */
