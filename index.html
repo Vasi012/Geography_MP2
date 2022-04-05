@@ -1,80 +1,40 @@
-<!DOCTYPE html>
-<html lang="en-US">
+l see your score. Ready?!</p>
+</div>
+</div>
+</header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
-    <meta name="description" content="geography, quiz, questionaire, world, map">
-    <meta name="keywords" content="geography, questionaire, worldwide">
+<!--Game field-->
+<div class="game-area">
+    <button id="start-game" class="start-game">Start!</button>
+    <div id="question" class="hide">Q) What is ............. ?</div>
+    <div id="answer-buttons" class="btn-grid hide">
+        <button id="button-a" class="btn">A.</button>
+        <button id="button-b" class="btn">B.</button>
+        <button id="button-c" class="btn">C.</button>
+        <button id="button-d" class="btn">D.</button>
 
-    <!--stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="author" content="Pavaloi Vasilica-Catalin">
-
-    <!--Project Title-->
-
-    <title>Do you know?</title>
-
-</head>
-
-<body>
-    <!--Logo & Header-->
-    <header>
-        <h1>Geography Quiz <i class="fa-duotone fa-globe-stand"></i></h1>
-        <button id="gameInstructions">Instructions</button>
-
-        <div id="gameHelp" class="modal">
-            <div class="hidden-instructions">
-                <span class="close">&times;</span>
-                <p>Welcome Geography knowers, here is the quiz zone... You ready to prove everyone your knowledge?
-                    Answer the next 10 questions and prove everyone that you are the best! In case the questions are to
-                    hard we will help you with 4 diferent answers, just one of them is corect. Chose whisley and submit
-                    your answer. At the end of this test you will see your score. Ready?!</p>
-            </div>
-        </div>
-    </header>
-
-    <!--Game field-->
-    <div class="game-area">
-        <button id="start-game" class="start-game">Start!</button>
-        <div id="question" class="hide">Q) What is ............. ?</div>
-        <div id="answer-buttons" class="btn-grid hide">
-            <button id="button-a" class="btn">A.</button>
-            <button id="button-b" class="btn">B.</button>
-            <button id="button-c" class="btn">C.</button>
-            <button id="button-d" class="btn">D.</button>
-
-            <!--Submit Button-->
-            <button id="submit-btn" data-type="submit" class="submit-btn">Submit Answer: </button>
-            <button id="next-btn" data-type="submit" class="next-btn hide">Next Question <i
-                    class="fa-solid fa-arrow-right-from-bracket"></i></button>
-            <!--Number of the question-->
-            <div class="question-counter">
-                <p><span id="question-number">1</span>/<span>10</span></p>
-            </div>
-        </div>
-        <!--Result Display-->
-        <div id="result-box" class="hide">
-            <p>You achieved the score of: <span id="user-score">0</span>/10!</p>
-            <br>
-            <div id="personal-message">Personal message</div>
-            <button id="start-new-game-btn">Start a New Questionaire!</button>
+        <!--Submit Button-->
+        <button id="submit-btn" data-type="submit" class="submit-btn">Submit Answer: </button>
+        <button id="next-btn" data-type="submit" class="next-btn hide">Next Question <i
+                class="fa-solid fa-arrow-right-from-bracket"></i></button>
+        <!--Number of the question-->
+        <div class="question-counter">
+            <p><span id="question-number">1</span>/<span>10</span></p>
         </div>
     </div>
-    <!--Footer-->
-    <footer class="dead-space"></footer>
-    <script src="https://kit.fontawesome.com/57a5431661.js" crossorigin="anonymous"></script>
-    <script type="module" src="assets/js/script.js"></script>
-    <script type="module" src="assets/js/questionaire.js"></script>
+    <!--Result Display-->
+    <div id="result-box" class="hide">
+        <p>You achieved the score of: <span id="user-score">0</span>/10!</p>
+        <br>
+        <div id="personal-message">Personal message</div>
+        <button id="start-new-game-btn">Start a New Questionaire!</button>
+    </div>
+</div>
+<!--Footer-->
+<footer class="dead-space"></footer>
+<script src="https://kit.fontawesome.com/57a5431661.js" crossorigin="anonymous"></script>
+<script type="module" src="assets/js/script.js"></script>
+<script type="module" src="assets/js/questionaire.js"></script>
 </body>
 
 </html>
