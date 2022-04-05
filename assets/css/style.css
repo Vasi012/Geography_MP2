@@ -36,18 +36,19 @@ header button {
     width: fit-content;
     font-size: 1.3em;
     padding: 0 3%;
-    background-color: rgb(245, 245, 245, 0.3);
+    background-color: rgba(0, 17, 255, 0.521);
     border-radius: 30px;
     border-style: solid;
     border-width: 2px;
-    border-color: darkolivegreen;
+    border-color: rgba(255, 0, 0, 0.685);
     text-align: center;
     margin: 10px auto;
     cursor: pointer;
 }
 
 header button:hover {
-    outline: 2px solid darkolivegreen;
+    outline: 2px solid rgb(255, 0, 0);
+    background-color: rgb(0, 17, 255);
 }
 
 .modal {
@@ -66,17 +67,20 @@ header button:hover {
 
 /* Modal Content */
 .hidden-instructions {
-    background-color: #fefefe;
+    background-color: #8eaeffcf;
+    ;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 3px solid #8effa1cf;
+    ;
     width: 80%;
     font-size: 1.5em;
+    text-align: center;
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: #000000;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -84,7 +88,7 @@ header button:hover {
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: rgb(9, 255, 0);
     text-decoration: none;
     cursor: pointer;
 }
@@ -95,11 +99,11 @@ header button:hover {
     height: fit-content;
     margin: auto;
     text-align: center;
-    background-image: radial-gradient(green, yellowgreen, yellow);
+    background-image: radial-gradient(white, blue);
     border-radius: 35px;
     border-style: double;
     border-width: 10px;
-    border-color: darkseagreen;
+    border-color: darkblue;
     align-items: center;
     justify-content: center;
 }
@@ -113,15 +117,15 @@ header button:hover {
     width: 45%;
     height: fit-content;
     font-family: inherit;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1.2px;
     margin: 5px 10px;
     font-size: 1.4em;
-    background-color: darkseagreen;
+    background-color: green;
     border-radius: 35px;
     border-style: solid;
     border-width: 2px;
-    border-color: darkolivegreen;
+    border-color: darkgreen;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -129,7 +133,8 @@ header button:hover {
 }
 
 .btn:hover {
-    outline: 3px solid darkolivegreen;
+    outline: 3px solid rgb(0, 0, 0);
+    background-color: rgb(0, 255, 21);
 }
 
 .btm-grid {
@@ -148,16 +153,17 @@ header button:hover {
     margin: auto;
     margin-top: 70px;
     font-size: 1.3em;
-    background-color: lightgreen;
+    background-color: green;
     border-radius: 35px;
     border-style: solid;
     border-width: 2px;
-    border-color: darkolivegreen;
+    border-color: rgb(0, 255, 21);
     cursor: pointer;
 }
 
 .submit-btn:hover {
-    outline: 2px solid darkolivegreen;
+    outline: 2px solid rgb(0, 255, 21);
+    background-color: rgb(0, 173, 0);
 }
 
 /* Next Question Button */
@@ -169,16 +175,17 @@ header button:hover {
     margin: auto;
     margin-top: 70px;
     font-size: 1.3em;
-    background-color: lightgreen;
+    background-color: green;
     border-radius: 35px;
     border-style: solid;
     border-width: 2px;
-    border-color: darkolivegreen;
+    border-color: rgb(0, 255, 21);
     cursor: pointer;
 }
 
 .next-btn:hover {
-    outline: 2px solid darkolivegreen;
+    outline: 2px solid rgb(0, 255, 21);
+    background-color: rgb(0, 173, 0);
 }
 
 /* Start Game Button */
@@ -189,18 +196,19 @@ header button:hover {
     font-size: 3.9em;
     font-weight: 700;
     border-width: 3px;
-    border-color: black;
+    border-color: darkgreen;
     cursor: pointer;
     top: 30px;
     padding: 10px 20px;
     text-align: center;
-    background-color: lightgreen;
+    background-color: rgb(0, 173, 0);
     border-radius: 35px;
     border-style: solid;
 }
 
 .start-game:hover {
-    outline: 2px solid black;
+    outline: 2px solid rgb(0, 104, 9);
+    background-color: rgb(0, 214, 0);
 }
 
 /* Question Counter */
@@ -231,11 +239,11 @@ header button:hover {
     font-size: 1.4em;
     font-weight: 900;
     margin: 70px 40px 70px 40px;
-    background-color: rgb(107, 179, 189, 0.7);
+    background-color: rgba(0, 17, 255, 0.7);
     padding: 30px;
     border-radius: 35px;
     border-style: solid;
-    border-color: rgb(71, 112, 112);
+    border-color: rgb(0, 87, 87);
     border-width: 3px;
 }
 
@@ -251,11 +259,11 @@ header button:hover {
     margin: auto;
     margin-top: 60px;
     font-size: 1.3em;
-    background-color: lightgreen;
+    background-color: rgb(0, 214, 0);
     border-radius: 35px;
     border-style: solid;
     border-width: 2px;
-    border-color: darkolivegreen;
+    border-color: darkgreen;
     cursor: pointer;
 }
 
