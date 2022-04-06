@@ -49,7 +49,6 @@ let shuffledQuestions, currentQuestionIndexNumber;
  * to where the game taks place.
  */
 function startGame() {
-    console.log("started");
     startButton.classList.add("hide");
     document.getElementById("question").classList.remove("hide");
     shuffledQuestions = quizQuestions.sort(() => Math.random() - 0.5);
@@ -67,7 +66,6 @@ function startGame() {
 function displayNextQuestion() {
     document.getElementById("next-btn").classList.add("hide");
     document.getElementById("submit-btn").classList.remove("hide");
-    displayQuestion();
 }
 
 /**
