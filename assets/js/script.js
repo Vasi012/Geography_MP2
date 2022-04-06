@@ -144,8 +144,12 @@ function submitAnswer(event) {
     }
 }
 submitAnsBtn.addEventListener("click", submitAnswer);
-//check when reached 10 questions that will end the game and return the score
-function returnResults(event) {
+/**
+ * This finction will return the results
+ * when the test its finish.
+ *
+ */
+function returnResults() {
     let totalScore = correctAnswerScore + incorrectAnswerScore;
     if (totalScore === 10) {
         document.getElementById("question").classList.add("hide");
@@ -174,8 +178,11 @@ function returnResults(event) {
 nextQuestBtn.addEventListener("click", displayNextQuestion);
 nextQuestBtn.addEventListener("click", resetBackgroundColor);
 nextQuestBtn.addEventListener("click", returnResults);
-//reset Values
-function resetGameValues(event) {
+/**
+ * This function will reset the game values
+ * all the values will become now 0.
+ */
+function resetGameValues() {
     currentQuestionIndexNumber = 1;
     correctAnswerScore = 0;
     incorrectAnswerScore = 0;
