@@ -66,6 +66,7 @@ function startGame() {
 function displayNextQuestion() {
     document.getElementById("next-btn").classList.add("hide");
     document.getElementById("submit-btn").classList.remove("hide");
+    resetBackgroundColor();
     displayQuestion();
 }
 
@@ -131,16 +132,16 @@ function answerHighlighted() {
 function resetBackgroundColor() {
     let buttons = document.getElementsByClassName("btn");
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].style.backgroundColor = "#006487;";
+        buttons[i].style.backgroundColor = "#006487";
     }
 }
 
 //event listners to the selected answer on onclicks
 let buttons = document.getElementsByClassName("btn");
 for (let i = 0; i < buttons.length; i++) {
-    let button = buttons[i].addEventListener("click", resetBackgroundColor);
-    button = buttons[i].addEventListener("click", answerHighlighted);
-    button = buttons[i].addEventListener("click", answerSelected);
+    //let button = buttons[i].addEventListener("click", resetBackgroundColor);
+    buttons[i].addEventListener("click", answerHighlighted);
+    buttons[i].addEventListener("click", answerSelected);
 }
 
 /**
@@ -243,7 +244,7 @@ function returnResults() {
 
 //displany Next Question
 nextQuestBtn.addEventListener("click", displayNextQuestion);
-nextQuestBtn.addEventListener("click", resetBackgroundColor);
+
 nextQuestBtn.addEventListener("click", returnResults);
 
 /**
