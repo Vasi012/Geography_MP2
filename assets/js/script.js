@@ -66,6 +66,7 @@ function startGame() {
 function displayNextQuestion() {
     document.getElementById("next-btn").classList.add("hide");
     document.getElementById("submit-btn").classList.remove("hide");
+    displayQuestion();
 }
 
 /**
@@ -163,6 +164,7 @@ function checkAnswer() {
             }
         }
     }
+    selectedValue = null;
 }
 
 /**
@@ -235,11 +237,11 @@ function returnResults() {
     } else if (correctAnswerScore < 9) {
         personalMessage.innerHTML = "Wow you are amazing, try again and get 10/10, let see if you can!";
     } else if (correctAnswerScore == 10) {
-        personalMessage.innerHTML = "WOW 10/10 YOU ARE AWESOME. Ladies and gentalman's THE WINNER!";
+        personalMessage.innerHTML = "WOW 10/10 YOU ARE AWESOME. Ladies and gentelmans THE WINNER!";
     }
 }
 
-//displany Next QUestion
+//displany Next Question
 nextQuestBtn.addEventListener("click", displayNextQuestion);
 nextQuestBtn.addEventListener("click", resetBackgroundColor);
 nextQuestBtn.addEventListener("click", returnResults);
