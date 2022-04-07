@@ -14,6 +14,7 @@
 
 body {
     background-image: url(/assets/images/Earth.jpg);
+    background-color: #4d0000;
     font-family: "Nunito", sans-serif;
     width: 100%;
     margin: 0 auto;
