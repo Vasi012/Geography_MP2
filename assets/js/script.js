@@ -89,6 +89,7 @@ function questionTracker() {
     }
 };
 
+
 /**
  * This function will display the questions from questionaire to
  * each button a, b, c, d
@@ -202,8 +203,8 @@ function submitAnswer() {
     if (selectedValue == null) {
         return alert("Please select an answer");
     } else if (selectedValue != null) {
-        checkAnswer();
         countScore();
+        checkAnswer();
         nextQuestionsButtonDisplay();
         questionTracker();
     }
@@ -212,7 +213,7 @@ function submitAnswer() {
 submitAnsBtn.addEventListener("click", submitAnswer);
 
 /**
- * This finction will return the results
+ * This function will return the results
  * when the test its finish.
  *
  */
