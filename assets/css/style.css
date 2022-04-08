@@ -230,6 +230,7 @@ header button:hover {
 #error404 {
     color: whitesmoke;
 }
+
 .paragraph {
     font-size: 50px;
     font-weight: 700;
@@ -238,7 +239,7 @@ header button:hover {
     color: antiquewhite;
 }
 
-#homebutton {
+.homebutton {
     background-color: rgb(255, 255, 255);
     color: #000000;
     padding: 14px 28px;
@@ -249,7 +250,7 @@ header button:hover {
     text-decoration: none;
 }
 
-#homebutton :hover {
+.homebutton :hover {
     background-color: rgb(49, 49, 49);
     color: rgb(0, 0, 0);
     border-radius: 8px;
