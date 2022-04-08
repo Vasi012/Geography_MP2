@@ -227,6 +227,9 @@ header button:hover {
 }
 
 /*404 page*/
+#error404 {
+    color: whitesmoke;
+}
 .paragraph {
     font-size: 50px;
     font-weight: 700;
