@@ -226,6 +226,14 @@ header button:hover {
     height: 400px;
 }
 
+/*404 page*/
+.paragraph {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+}
+
 /* up the screen dead space for devices from 780px of full height to larger devices and monitors */
 @media screen and (min-height: 780px) {
     .dead-space {
