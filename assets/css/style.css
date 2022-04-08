@@ -235,7 +235,7 @@ header button:hover {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     color: antiquewhite;
 }
 
@@ -364,6 +364,13 @@ header button:hover {
 
     #start-new-game-btn {
         font-size: 1.2em;
+    }
+    /*404 page*/
+    #error404 {
+        font-size: 50px;
+    }
+    .paragraph {
+        font-size: 40px;
     }
 }
 
