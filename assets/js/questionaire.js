@@ -849,7 +849,7 @@ var quizQuestionsDataBase = [{
         ],
         correctAnswer: "Sudan",
     },
-]
+];
 
 export {
     quizQuestionsDataBase

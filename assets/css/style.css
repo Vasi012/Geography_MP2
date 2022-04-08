@@ -46,6 +46,7 @@ header button {
     text-align: center;
     margin: 10px auto;
     cursor: pointer;
+    color: honeydew;
 }
 
 header button:hover {
@@ -112,7 +113,9 @@ header button:hover {
 
 #question {
     margin: 70px 5px 70px 5px;
-    font-size: 1.5em;
+    font-size: 2.0em;
+    font-weight: 900;
+    color: honeydew;
 }
 
 .btn {
@@ -133,6 +136,7 @@ header button:hover {
     cursor: pointer;
     padding: 10px 20px;
     font-weight: bold;
+    color: honeydew;
 }
 
 .btn:hover {
@@ -163,6 +167,7 @@ header button:hover {
     border-color: #990303;
     cursor: pointer;
     font-weight: 900;
+    color: honeydew;
 }
 
 .submit-btn:hover {
@@ -208,6 +213,7 @@ header button:hover {
     background-color: #006487;
     border-radius: 35px;
     border-style: solid;
+    color: honeydew;
 }
 
 .start-game:hover {
@@ -220,7 +226,8 @@ header button:hover {
     margin: 10px 0 35px 0;
     padding-bottom: 10px;
     font-size: 1.4em;
-    font-weight: 700;
+    font-weight: 900;
+    color: honeydew;
 }
 
 .dead-space {

@@ -86,7 +86,7 @@ function questionTracker() {
     if (currentQuestionIndexNumber == 10) {
         nextQuestBtn.innerHTML = "Show Results";
     }
-};
+}
 
 
 /**
