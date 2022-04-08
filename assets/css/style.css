@@ -239,7 +239,11 @@ header button:hover {
     color: antiquewhite;
 }
 
-.homebutton {
+#centerbu {
+    text-align: center;
+}
+
+.homebu {
     background-color: rgb(255, 255, 255);
     color: #000000;
     padding: 14px 28px;
@@ -248,9 +252,10 @@ header button:hover {
     display: inline-block;
     border-radius: 8px;
     text-decoration: none;
+    position: absolute;
 }
 
-.homebutton :hover {
+.homebu :hover {
     background-color: rgb(49, 49, 49);
     color: rgb(0, 0, 0);
     border-radius: 8px;
