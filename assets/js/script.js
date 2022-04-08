@@ -61,7 +61,6 @@ function startGame() {
 /**
  * This function will display a new question after user press
  * Submit and next button.
- *  
  */
 function displayNextQuestion() {
     document.getElementById("next-btn").classList.add("hide");
