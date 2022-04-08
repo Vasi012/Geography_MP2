@@ -232,6 +232,24 @@ header button:hover {
     font-weight: 700;
     text-align: center;
     padding: 30px;
+    color: antiquewhite;
+}
+
+#homebutton {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 14px 28px;
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#homebutton :hover {
+    background-color: rgb(49, 49, 49);
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
 }
 
 /* up the screen dead space for devices from 780px of full height to larger devices and monitors */
