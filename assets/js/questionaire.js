@@ -1,3 +1,5 @@
+//Questions for the quiz
+
 var quizQuestionsDataBase = [{
         question: "What is the name of the tallest mountain in the world?",
         answers: [{
