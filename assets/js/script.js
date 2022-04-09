@@ -35,7 +35,7 @@ window.onclick = function (event) {
     }
 };
 
-
+//global variant for the game
 var quizQuestions = quizQuestionsDataBase;
 const startButton = document.getElementById("start-game");
 startButton.addEventListener("click", startGame);
@@ -139,7 +139,6 @@ function resetBackgroundColor() {
 //event listners to the selected answer on onclicks
 let buttons = document.getElementsByClassName("btn");
 for (let i = 0; i < buttons.length; i++) {
-    //let button = buttons[i].addEventListener("click", resetBackgroundColor);
     buttons[i].addEventListener("click", answerHighlighted);
     buttons[i].addEventListener("click", answerSelected);
 }
@@ -179,7 +178,7 @@ function countScore() {
         incorrectAnswerScore += 1;
     }
 }
-
+//global variant for the game
 //creeate variable of the submitAnswers and nextQuestions button
 let submitAnsBtn = document.getElementById("submit-btn");
 let nextQuestBtn = document.getElementById("next-btn");
@@ -260,6 +259,7 @@ function resetGameValues() {
     document.getElementById("next-btn").innerHTML = "Next Question";
 }
 
+//global variant for the game
 //start a new game
 let startNewGameBtn = document.getElementById("start-new-game-btn");
 startNewGameBtn.addEventListener("click", resetGameValues);
