@@ -4,7 +4,7 @@
 
 ![the new mockup](https://user-images.githubusercontent.com/96884287/162581586-776c6bc7-eb3d-45c6-8216-4717e10dc5cf.png)
 
-The live website can be found [here](https://vasi012.github.io/Geography_MP2/), and in the ‘About’ section located on the top of the page from my GitHub. [Click here](https://github.com/Vasi012/Geography_MP2).
+The live website can be found [here](https://vasi012.github.io/Geography_MP2/).
 
 
 # Features
@@ -129,6 +129,7 @@ The final score section has a button which permits every user to start a **new g
 
 ### Favicon.io 
 – Favicon files were created at https://favicon.io/favicon-converter/
+
 ### Balsamiq 
 – Wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/# 
 
@@ -213,9 +214,7 @@ This was done by clicking on the navigation links on each page.
 **Navigation link**    **Page to load**
        *Home*             *index.html*
 
-**Navigation link**    **Page to load**
-      *404*               *404.html* 
-      
+
 Links on all pages navigate to the correct pages as expected. 
 
 # Footer
