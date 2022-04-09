@@ -13,7 +13,6 @@
 }
 
 body {
-    background-image: url(/assets/images/Earth.jpg);
     background-color: #4d0000;
     font-family: "Nunito", sans-serif;
     width: 100%;
@@ -269,17 +268,6 @@ header button:hover {
     border-radius: 8px;
 }
 
-/* up the screen dead space for devices from 780px of full height to larger devices and monitors */
-@media screen and (min-height: 780px) {
-    .dead-space {
-        height: 650px;
-    }
-}
-
-.hide {
-    display: none;
-}
-
 /* RESULT BOX */
 #result-box {
     font-size: 1.4em;
@@ -311,6 +299,17 @@ header button:hover {
     border-width: 2px;
     border-color: darkgreen;
     cursor: pointer;
+}
+
+/* up the screen dead space for devices from 780px of full height to larger devices and monitors */
+@media screen and (min-height: 780px) {
+    .dead-space {
+        height: 650px;
+    }
+}
+
+.hide {
+    display: none;
 }
 
 /* Change screen size from larger to Medium size devices from 580px down" */
