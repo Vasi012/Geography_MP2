@@ -232,11 +232,11 @@ function returnResults() {
     if (correctAnswerScore == 0) {
         personalMessage.innerHTML = "Opps...Looks like you have to learn some geography... Try again!";
     } else if (correctAnswerScore < 3) {
-        personalMessage.innerHTML = "Not to bad, but i'm sure you can do better next time!";
+        personalMessage.innerHTML = "Not too bad, but I'm sure you can do better next time!";
     } else if (correctAnswerScore < 6) {
-        personalMessage.innerHTML = "Well, it's better then nothing :), try again!";
+        personalMessage.innerHTML = "Well, it's better than nothing :), try again!";
     } else if (correctAnswerScore < 9) {
-        personalMessage.innerHTML = "Wow you are amazing, try again and get 10/10, let see if you can!";
+        personalMessage.innerHTML = "Wow you are amazing, try again and get 10/10, let's see if you can!";
     } else if (correctAnswerScore == 10) {
         personalMessage.innerHTML = "WOW 10/10 YOU ARE AWESOME. Ladies and gentelmans THE WINNER!";
     }

@@ -151,7 +151,6 @@ var quizQuestionsDataBase = [{
         ],
         correctAnswer: "Ottawa",
     },
-
     {
         question: "What is the name of the largest ocean in the world?",
         answers: [{
