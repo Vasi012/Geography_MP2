@@ -1,6 +1,6 @@
 import {
     quizQuestionsDataBase
-} from "../js/questionaire.js";
+} from "./questionnaire.js";
 
 //game instructions help
 var modal = document.getElementById("gameHelp");
@@ -46,7 +46,7 @@ let shuffledQuestions, currentQuestionIndexNumber;
 
 /**
  * This function will start the game, by pressing ''Start'' button you will be redirected 
- * to where the game taks place.
+ * to where the game takes place.
  */
 function startGame() {
     startButton.classList.add("hide");
@@ -70,7 +70,7 @@ function displayNextQuestion() {
 }
 
 /**
- * This function will call from data base a diferen random question
+ * This function will call from data base a different random question
  */
 function setNextQuestion() {
     displayNextQuestion(shuffledQuestions[currentQuestionIndexNumber]);
@@ -90,7 +90,7 @@ function questionTracker() {
 
 
 /**
- * This function will display the questions from questionaire to
+ * This function will display the questions from questionnaire to
  * each button a, b, c, d
  */
 function displayQuestion() {
@@ -106,6 +106,11 @@ function displayQuestion() {
     c.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[2].answer;
     let d = document.getElementsByClassName("btn")[3];
     d.innerHTML = shuffledQuestions[currentQuestionIndexNumber].answers[3].answer;
+
+    const buttons = document.getElementsByClassName("btn")
+    for (const button of buttons) {
+        button.disabled = false;
+    }
 }
 
 /**
@@ -121,12 +126,13 @@ function answerSelected() {
  * 
  */
 function answerHighlighted() {
+    resetBackgroundColor()
     this.style.backgroundColor = "teal";
 }
 
 /**
- * Once a button is presed and the user moves to next question,
- * all the answer buttons will be reseted to the initial color.
+ * Once a button is pressed and the user moves to next question,
+ * all the answer buttons will be reset to the initial color.
  * 
  */
 function resetBackgroundColor() {
@@ -136,7 +142,7 @@ function resetBackgroundColor() {
     }
 }
 
-//event listners to the selected answer on onclicks
+//event listeners to the selected answer on clicks
 let buttons = document.getElementsByClassName("btn");
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", answerHighlighted);
@@ -145,10 +151,13 @@ for (let i = 0; i < buttons.length; i++) {
 
 /**
  * checkAnswer will check the answer if the answer is correct
- * the user will rechieve 1 correct answer if not, 1 incorrect answer.
+ * the user will receive 1 correct answer if not, 1 incorrect answer.
  */
 function checkAnswer() {
     let buttons = document.getElementsByClassName("btn");
+    for (const button of buttons) {
+        button.disabled = true;
+    }
     if (selectedValue === shuffledQuestions[currentQuestionIndexNumber].correctAnswer) {
         for (let i = 0; i < buttons.length; i++) {
             if (buttons[i].textContent === selectedValue) {
@@ -179,7 +188,7 @@ function countScore() {
     }
 }
 //global variant for the game
-//creeate variable of the submitAnswers and nextQuestions button
+//create variable of the submitAnswers and nextQuestions button
 let submitAnsBtn = document.getElementById("submit-btn");
 let nextQuestBtn = document.getElementById("next-btn");
 
@@ -237,11 +246,11 @@ function returnResults() {
     } else if (correctAnswerScore < 9) {
         personalMessage.innerHTML = "Wow you are amazing, try again and get 10/10, let's see if you can!";
     } else if (correctAnswerScore == 10) {
-        personalMessage.innerHTML = "WOW 10/10 YOU ARE AWESOME. Ladies and gentelmans THE WINNER!";
+        personalMessage.innerHTML = "WOW 10/10 YOU ARE AWESOME. Ladies and gentleman THE WINNER!";
     }
 }
 
-//displany Next Question
+//display Next Question
 nextQuestBtn.addEventListener("click", displayNextQuestion);
 
 nextQuestBtn.addEventListener("click", returnResults);

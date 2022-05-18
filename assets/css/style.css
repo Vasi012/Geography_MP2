@@ -143,12 +143,8 @@ header button:hover {
     background-color: #00bbff;
 }
 
-.btm-grid {
-    align-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 0);
-    gap: 10px;
+.btn:disabled {
+    color: #000000;
 }
 
 /* Submit Answer Button */
