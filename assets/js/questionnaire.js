@@ -417,7 +417,7 @@ var quizQuestionsDataBase = [{
                 answer: "Germany"
             },
             {
-                answer: "Danemark"
+                answer: "Denmark"
             },
             {
                 answer: "Paris"
@@ -522,7 +522,7 @@ var quizQuestionsDataBase = [{
                 answer: "Malaysia"
             },
             {
-                answer: "Philippies"
+                answer: "Philippines"
             }
         ],
         correctAnswer: "China",

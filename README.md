@@ -74,7 +74,7 @@ Once the user complete 10/10 questions he will be prompted to the final score.
 
 The final score will be presented to the player and a personal message will be prompted.
 
-![diferit score message](https://user-images.githubusercontent.com/96884287/162581809-1fa3873f-c45a-4b24-9cc2-9603951aafae.png)
+![score message](https://user-images.githubusercontent.com/96884287/162581809-1fa3873f-c45a-4b24-9cc2-9603951aafae.png)
 
   
 The final score section has a button which permits every user to start a **new game** where they can achieve a **higher score** than *before*.
@@ -153,7 +153,7 @@ Step to test:
 
 Expected:
 
-Website is responsive on all screen sizes and no images are pixeled or stretched. No horizontal scroll is present. No elements overlap.
+Website is responsive on all screen sizes and no images are pixels or stretched. No horizontal scroll is present. No elements overlap.
 
 Actual:
 
@@ -163,7 +163,7 @@ Website was also opened on the following devices and no responsive issues were n
 -	iPhone 12 PRO 
 -	iPhone 13 PRO
 -	iPad Pro
--	Qukitel C12 Pro
+-	Oukitel C12 Pro
 -	TCL 30 Pro
 -	iPhone SE
 -	Laptop 
@@ -195,7 +195,7 @@ Website was also opened on the following devices and no responsive issues were n
 Testing was focused to ensure the following criteria were meet: 
 
 -	All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs.
--	Colour contrasts meet a minimum ratio as specified in WCAG 2.1 Contrast Guidelines.
+-	Color contrasts meet a minimum ratio as specified in WCAG 2.1 Contrast Guidelines.
 -	Heading levels are not missed or skipped to ensure the importance of content is relayed correctly to the end user.
 -	All content is contained within landmarks to ensure ease of use for assistive technology, allowing the user to navigate by page regions.
 -	All not textual content had alternative text or titles, so descriptions are read out to screen readers.
@@ -204,7 +204,7 @@ Testing was focused to ensure the following criteria were meet:
 -	WCAG 2.1 Coding best practices being followed.
 - Manual tests were also performed to ensure the website was accessible as possible and some accessibility issues were identified.
 
-### *Issue #1: If you click one variant of answer and before submitting you changed your mind, the preview button it’s not resetting its colour to the initial colour.* 
+### *Issue #1: If you click one variant of answer and before submitting you changed your mind, the preview button it’s not resetting its color to the initial color.* 
 
 # Navigation Links
 
@@ -256,7 +256,7 @@ No errors were returned when passing through the JShint validator
 
 ![js questionaire](https://user-images.githubusercontent.com/96884287/162582214-d23b998b-5344-4ed2-a31a-0181142d1b44.png)
 
-- **Lighthouse Repport**
+- **Lighthouse Report**
 
 ![Screenshot 2022-04-09 171549](https://user-images.githubusercontent.com/96884287/162582329-b5ed6cf6-8298-493a-8c64-3e5fbebade7d.png)
 
